@@ -26,7 +26,7 @@ body {
   margin: 0;
   background: #132B4D;
   display: grid;
-  margin: 5% 80px 0px 80px;
+  margin: 10% 15% 10% 15%;
 }
 
 * {
@@ -38,11 +38,18 @@ body {
   flex-direction: row;
   text-align: left;
   justify-content: center;
+  width: 100%;
 }
 
 .top {
-  width: 600px;
-  height: 230px;
+  width: 50%;
+  height: 40%;
+}
+
+.topImage {
+  width: 50%;
+  height: 40%;
+  text-align: right;
 }
 
 .top h1 {
@@ -54,17 +61,16 @@ body {
 
 #title {
   color: #7EE8FF;
-  font-size: 24px;
+  font-size: 150%;
 }
 
 #inquiry {
   color: black;
   background-color: white;
   border: none;
-  border-radius: 40px;
-  padding: 10px 50px 10px 50px;
-  margin-top: 20px;
-  height: 50px;
+  border-radius: 9999px;
+  padding: 2% 2% 2% 2%;
+  height: 1%;
 
 }
 
@@ -72,21 +78,23 @@ body {
   display: flex;
   flex-direction: row;
   text-align: left;
-  margin-top: 20px;
+  margin-top: 3%;
+  width: 100%;
 }
 .contentsList {
   border-left: solid;
   border-color: #E6EDF34D;
-  padding: 0px 30px 0px 30px;
+  padding: 0px 1% 0px 1%;
+  width: 33%;
 }
 .contentsList p {
-  margin-bottom: 5px;
+  margin-bottom: 1%;
 }
 
 
 @media (max-width :400px){
   body {
-    margin: 112px 24px 0px 24px;
+    margin: 10% 5% 0px 5%;
   }
 
   .main {
@@ -94,31 +102,48 @@ body {
     flex-direction: column;
     text-align: left;
     justify-content: center;
+    width: fill;
+  }
+
+  #title {
+    font-size: 100%;
   }
 
   .top h1 {
-    font-size: 32px;
+    font-size: 100%;
+    width: fill;
   }
 
   #inquiry {
-    padding: 10px 50px 10px 50px;
-    margin-top: 20px;
-    margin: 20px 0px 20px 0px;
-    height: 50px;
+    padding: 5% 15% 5% 15%;
+    margin-top: 5%;
+    margin: 5% 0px 5% 0px;
+    /*
+    height: 2%;
+    */
   }
   
   .topImage {
     width: 100%;
-    margin: 50px 10px 50px 10px;
+    height: auto;
+    margin: 10% 0% 10% 0%;
+    text-align: center;
+  }
+  
+  .topImage img {
+    width: 100%;
+    height: auto;
   }
 
   .contents {
     flex-direction: column;
+    width: 100%;
     
   }
 
   .contentsList {
-    margin: 10px;
+    margin: 5% 10% 5% 0%;
+    width: 100%;
   }
 
 
